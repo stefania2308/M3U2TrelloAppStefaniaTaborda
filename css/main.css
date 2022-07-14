@@ -143,6 +143,10 @@ body{
 }
 
 .form-container{
-
-
+	text-align: center;
+	display: flex;
+	padding: 30px;
+	width: 750px;
+	background: #54fc70;
+	border-radius: 5px;
 }
