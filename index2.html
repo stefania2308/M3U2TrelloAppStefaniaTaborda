@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tablero Trello </title>
+	<link rel="stylesheet" href="css/main.css">
+	
+</head>
+<body>
+
+	    <!-- ENCABEZADO-->
+		<header class="header">
+			<nav class="nav">
+				<a href="#" class="logo"> Trello</a>
+			   <!-- <img  class="icono" src="iconoTrello.png" width="50" height="50">-->
+		
+			</nav>
+		</header>
+		<!-- CIERRE DEL ENCABEZADO-->
+
+
+			  <div class="form-container">
+				<h2 class="aside-form-title">Nueva Tarea</h2>
+				<form class="form-new-task" id="formNewTask">
+				  <div class="row-form">
+					<label for="titleTask" class="form-new-task__label"
+					  >Título:</label
+					>
+					<input
+					  id="titleTask"
+					  name="titleTask"
+					  type="text"
+					  class="form-new-task__input"
+					  placeholder="Escribe un título descriptivo"
+					/>
+				  </div>
+	  
+				  <div class="row-form">
+					<label for="responsibleTask" class="form-new-task__label"
+					  >Responsable:</label
+					>
+					<select name="responsibleTask" id="responsibleTask">
+					  <option value="">--Seleccionar--</option>
+					  <option value="user01">User 01</option>
+					  <option value="user02">User 02</option>
+					</select>
+				  </div>
+	  
+				  <div class="row-form">
+					<label for="deadLineTask" class="form-new-task__label"
+					  >Plazo entrega:</label
+					>
+					<select name="deadLineTask" id="deadLineTask">
+					  <option value="">--Seleccionar--</option>
+					  <option value="oneDay">1 día</option>
+					  <option value="twoDay">2 días</option>
+					  <option value="sevenDay">1 semana</option>
+					</select>
+				  </div>
+	  
+				  <div class="row-form">
+					<div class="form-new-task__buttons">
+					  <button class="button button-primary" type="submit"
+						>Guardar</button
+					  >
+					  <button
+						class="button button-secondary ghost"
+						type="reset"
+						id="btnCancelNewTask"
+						>Cancelar</button
+					  >
+					</div>
+				  </div>
+				</form>
+			  </div>
+			</div>
+		  </aside>
+	
+	<div class="kanban">
+		<!-- <div class="kanban__column">
+			<div class="kanban__column-title">Not Started</div>
+			<div class="kanban__items">
+				<div contenteditable class="kanban__item-input">Wash the dishes</div>
+				<div class="kanban__dropzone"></div>
+			</div>
+			<button class="kanban__add-item" type="button">+ Add</button>
+		</div> -->
+	</div>
+
+	<script src="js/main.js" type="module"></script>
+</body>
+</html>
