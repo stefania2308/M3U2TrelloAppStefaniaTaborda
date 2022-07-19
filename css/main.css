@@ -142,11 +142,18 @@ body{
 	cursor: pointer;
 }
 
+/*formulario */
+
 .form-container{
-	text-align: center;
+	float:right ;
+	
 	display: flex;
-	padding: 30px;
-	width: 750px;
-	background: #54fc70;
+	padding: 100px;
+	width: 400px;
+	background: #FC5454;
 	border-radius: 5px;
+}
+
+.aside-form-title{
+	text-align: center
 }
