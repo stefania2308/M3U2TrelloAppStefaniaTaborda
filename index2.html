@@ -21,63 +21,19 @@
 		<!-- CIERRE DEL ENCABEZADO-->
 
 
-			  <div class="form-container">
-				<h2 class="aside-form-title" >Nueva Tarea</h2>
-				<form class="form-new-task" id="formNewTask">
-				  <div class="row-form">
-					<label for="titleTask" class="form-new-task__label"
-					  >Título:</label
-					>
-					<input
-					  id="titleTask"
-					  name="titleTask"
-					  type="text"
-					  class="form-new-task__input"
-					  placeholder="Escribe un título descriptivo"
-					/>
-				  </div>
-	  
-				  <div class="row-form">
-					<label for="responsibleTask" class="form-new-task__label"
-					  >Responsable:</label
-					>
-					<select name="responsibleTask" id="responsibleTask">
-					  <option value="">--Seleccionar--</option>
-					  <option value="user01">User 01</option>
-					  <option value="user02">User 02</option>
-					</select>
-				  </div>
-	  
-				  <div class="row-form">
-					<label for="deadLineTask" class="form-new-task__label"
-					  >Plazo entrega:</label
-					>
-					<select name="deadLineTask" id="deadLineTask">
-					  <option value="">--Seleccionar--</option>
-					  <option value="oneDay">1 día</option>
-					  <option value="twoDay">2 días</option>
-					  <option value="sevenDay">1 semana</option>
-					</select>
-				  </div>
-	  
-				  <div class="row-form">
-					<div class="form-new-task__buttons">
-					  <button class="button button-primary" type="submit"
-						>Guardar</button
-					  >
-					  <button
-						class="button button-secondary ghost"
-						type="reset"
-						id="btnCancelNewTask"
-						>Cancelar</button
-					  >
-					</div>
-				  </div>
-				</form>
-			  </div>
-			</div>
-		  </aside>
-	
+		<section class="formulario">
+
+			<h2>Nueva Tarea</h2>
+
+			<input type="text"  class="controls" name="titulo" id="titulo" placeholder="TITULO">
+			<input type="text" class="controls"  name="encargado" id="encargado" placeholder="NOMBRE">
+			<input type="datetime-local"  class="controls">
+
+			<input class="boton" type="button" value="guardar">
+
+		</section>
+
+
 	<div class="kanban">
 		<!-- <div class="kanban__column">
 			<div class="kanban__column-title">Not Started</div>
