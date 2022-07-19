@@ -18,7 +18,7 @@ export default class KanbanAPI {
 		};
 
 		if (!column) {
-			throw new Error("Column does not exist.");
+			throw new Error("la columna no existe.");
 		}
 
 		column.items.push(item);
@@ -40,7 +40,7 @@ export default class KanbanAPI {
 		})();
 
 		if (!item) {
-			throw new Error("Item not found.");
+			throw new Error("Objeto no encontrado.");
 		}
 
 		item.content = newProps.content === undefined ? item.content : newProps.content;
@@ -53,7 +53,7 @@ export default class KanbanAPI {
 			const targetColumn = data.find(column => column.id == newProps.columnId);
 
 			if (!targetColumn) {
-				throw new Error("Target column not found.");
+				throw new Error("Columna de destino no encontrada.");
 			}
 
 			// Eliminar el elemento de su columna actual
