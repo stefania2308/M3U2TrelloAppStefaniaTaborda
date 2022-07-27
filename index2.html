@@ -11,6 +11,7 @@
 <body>
 
 	    <!-- ENCABEZADO-->
+		<center>
 		<header class="header">
 			<nav class="nav">
 				<a href="#" class="logo"> Trello</a>
@@ -18,20 +19,21 @@
 		
 			</nav>
 		</header>
+	</center>
 		<!-- CIERRE DEL ENCABEZADO-->
 
 
-		<section class="formulario">
+		<form class="formulario">
 
 			<h2>Nueva Tarea</h2>
 
 			<input type="text"  class="controls" name="titulo" id="titulo" placeholder="TITULO">
-			<input type="text" class="controls"  name="encargado" id="encargado" placeholder="NOMBRE">
-			<input type="datetime-local"  class="controls">
+			<input type="text" class="controls"  name="responsable" id="responsable" placeholder="NOMBRE DEL RESPONSABLE">
+			<input type="datetime-local"  class="controls" id="tiempo">
 
-			<input class="boton" type="button" value="guardar">
+			<button class="boton" type="button">Guardar</button>
 
-		</section>
+		</form>
 
 
 	<div class="kanban">
